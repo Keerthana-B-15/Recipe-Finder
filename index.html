@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        <button id="add-ingredients-btn">Select Ingredients</button> <!-- Button to open the modal -->
+        <div id="recipe-list"></div> <!-- Section to display the list of recipes -->
+    </div>
+
+    <!-- Add Ingredients Modal -->
+    <div id="ingredients-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close button for the modal -->
+            <h2>Select Ingredients</h2>
+            <select id="ingredients-select" multiple> <!-- Dropdown for selecting ingredients -->
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <button id="search-recipes-btn">Search Recipes</button> <!-- Button to search for recipes -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
